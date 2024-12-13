@@ -1,5 +1,6 @@
 import React, {useState} from 'react';
 import {FaBars, FaTimes} from 'react-icons/fa';
+import { Helmet } from 'react-helmet-async';
 
 import {Link} from 'react-scroll';
 
@@ -8,6 +9,10 @@ function Navbar() {
     const links = ['home', 'about', 'portfolio', 'experience', 'contact']
     return (
        <>
+<Helmet>
+<title>Tilak kndl</title>
+<meta name='description' content='Beginner friendly page for learning React Helmet.' />
+</Helmet>
        <div className="flex justify-between items-center w-full h-20 px-4 text-white bg-black fixed">
         <div>
             <h1 className="text-5xl font-signature">Tilak</h1>
